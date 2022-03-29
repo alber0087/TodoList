@@ -9,7 +9,7 @@ export function TodoItem({ todo, toggleTodo }) {
 
     return (  
         <li>
-            <input type="checkbox" checked={completed} onChange={handleTodoClick} />  
+            <input type="checkbox" checked={completed} onChange={handleTodoClick} className="ma1"/>  
             {task}
         </li>
     )

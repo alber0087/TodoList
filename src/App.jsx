@@ -49,11 +49,11 @@ export function App() {
 
     return (
         <Fragment>
-            <h1 className="fl w-100 pa2 avenir ba br3">Lista de tareas</h1>
+            <h1 className="pa2 avenir">Lista de tareas</h1>
             <TodoList todos={todos} toggleTodo={toggleTodo} />
             <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
-            <button className="btn ma2" onClick={handleTodoAdd}>add</button>
-            <button className="btn" onClick={handleClearAll} >remove</button>
+            <button className="btn ma2" onClick={handleTodoAdd}>+</button>
+            <button className="btn bold" onClick={handleClearAll} >-</button>
             <div className="">
                 Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar
             </div>

@@ -1,6 +1,15 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: #FBF1A9;
+    color: #333333;
+    background-color: #FFD700;
+    font-family: avenir;
+}
+
+h1 {
+    background-color: #333333;
+    color: #FFFFFF;
+    width: 100%;
+
 }
 
