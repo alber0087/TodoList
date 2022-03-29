@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useRef, useEffect } from "react";
 import { TodoList } from './components/TodoList';
 import { v4 as uuidv4 } from 'uuid';
+import 'tachyons';
 
 const KEY = "todoApp.todos";
 
@@ -47,6 +48,7 @@ export function App() {
 
     return (
         <Fragment>
+            <h1 className="fl w-100">Lista de tareas</h1>
             <TodoList todos={todos} toggleTodo={toggleTodo} />
             <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
             <button onClick={handleTodoAdd}>add</button>
