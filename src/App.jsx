@@ -53,7 +53,7 @@ export function App() {
             <TodoList todos={todos} toggleTodo={toggleTodo} />
             <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
             <button className="btn ma2" onClick={handleTodoAdd}>+</button>
-            <button className="btn bold" onClick={handleClearAll} >-</button>
+            <button className="btn" onClick={handleClearAll} >-</button>
             <div className="">
                 Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar
             </div>
