@@ -2,8 +2,23 @@ body {
     display: flex;
     justify-content: center;
     color: #333333;
-    background-color: #FFD700;
+    background-color: #FFFFFF;
     font-family: avenir;
+}
+
+.container {
+  background-color: #FFD700;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -11,5 +26,13 @@ h1 {
     color: #FFFFFF;
     width: 100%;
 
+}
+
+input[type="checkbox"] {
+  background: ;
+}
+
+input[type="checkbox"]:checked {
+  background: #000000;
 }
 

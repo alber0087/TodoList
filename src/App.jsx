@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import './App.css'
 import 'tachyons';
 
+
 const KEY = "todoApp.todos";
 
 export function App() {
@@ -49,14 +50,16 @@ export function App() {
 
     return (
         <Fragment>
-            <h1 className="pa2 avenir">Lista de tareas</h1>
+          <div className="container">
+            <h1 className="pa2 avenir">Lista de tareas <i class="fi fi-rr-edit"></i></h1>
             <TodoList todos={todos} toggleTodo={toggleTodo} />
             <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
-            <button className="btn ma2" onClick={handleTodoAdd}>+</button>
-            <button className="btn" onClick={handleClearAll} >-</button>
+            <button className="ma2" onClick={handleTodoAdd}><i class="fi fi-rr-add"></i></button>
+            <button className="" onClick={handleClearAll} ><i class="fi fi-rr-trash"></i></button>
             <div className="">
                 Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar
             </div>
+          </div>  
         </Fragment>
     );
 } 
