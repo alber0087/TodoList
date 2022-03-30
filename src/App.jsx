@@ -56,10 +56,13 @@ export function App() {
             <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
             <button className="ma2" onClick={handleTodoAdd}><i class="fi fi-rr-add"></i></button>
             <button className="" onClick={handleClearAll} ><i class="fi fi-rr-trash"></i></button>
-            <div className="">
+            <div className="tasksLeft">
                 Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar
             </div>
-          </div>  
+          </div>
+          <footer>
+            <p>Copyright 2022 Alberto Rodríguez.</p>
+          </footer>  
         </Fragment>
     );
 } 

@@ -25,14 +25,14 @@ h1 {
     background-color: #333333;
     color: #FFFFFF;
     width: 100%;
-
 }
 
-input[type="checkbox"] {
-  background: ;
+.tasksLeft {
+  text-align: center;
+  margin-top: 5px;
 }
 
-input[type="checkbox"]:checked {
-  background: #000000;
+footer p {
+  font-size: 0.8em;
+  text-align: center;
 }
-
