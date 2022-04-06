@@ -7,12 +7,12 @@ body {
 }
 
 .container {
-  background-color: #FFD700;
+  background-color: #fae56b;
   justify-content: center;
   width: 100%;
   padding: 20px;
   padding-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 60px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -21,10 +21,27 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+#heading {
+  width: 100%;
+  background-color: #333333;
+  border-radius: 20px;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#heading i {
+  position: fixed;
+  font-size: 0.8em;
+  margin-top: 0.35rem;
+  margin-left: 0.3rem;
+  margin-right: 3rem;
+}
+
 h1 {
-    background-color: #333333;
     color: #FFFFFF;
-    width: 100%;
 }
 
 .tasksLeft {

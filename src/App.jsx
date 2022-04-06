@@ -51,7 +51,9 @@ export function App() {
     return (
         <Fragment>
           <div className="container">
-            <h1 className="pa2 avenir">Lista de tareas <i class="fi fi-rr-edit"></i></h1>
+            <div id="heading">
+              <h1 className="pa2 avenir">Lista de tareas <i class="fi fi-rr-edit"></i></h1>
+            </div>
             <TodoList todos={todos} toggleTodo={toggleTodo} />
             <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
             <button className="ma2" onClick={handleTodoAdd}><i class="fi fi-rr-add"></i></button>
