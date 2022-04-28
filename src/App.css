@@ -24,12 +24,12 @@ body {
 #heading {
   width: 100%;
   background-color: #333333;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 #heading i {
@@ -38,6 +38,18 @@ body {
   margin-top: 0.35rem;
   margin-left: 0.3rem;
   margin-right: 3rem;
+}
+
+.box-mid {
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -52,4 +64,8 @@ h1 {
 footer p {
   font-size: 0.8em;
   text-align: center;
+}
+
+button {
+  padding: 5px 5px 1px 5px;
 }

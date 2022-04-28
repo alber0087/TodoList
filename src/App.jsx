@@ -50,21 +50,25 @@ export function App() {
 
     return (
         <Fragment>
-          <div className="container">
-            <div id="heading">
-              <h1 className="pa2 avenir">Lista de tareas <i class="fi fi-rr-edit"></i></h1>
+            <div className="container">
+                <div id="heading">
+                    <h1 className="pa2 avenir">Lista de tareas <i class="fi fi-rr-edit"></i></h1>
+                </div>
+                <div className="box-mid">
+                    <TodoList todos={todos} toggleTodo={toggleTodo} />
+                </div>
+                <div className="box-container">
+                    <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
+                    <button className="btn ma2" onClick={handleTodoAdd}><i class="fi fi-rr-add"></i></button>
+                    <button className="btn" onClick={handleClearAll} ><i class="fi fi-rr-trash"></i></button>
+                </div>
+                <div className="tasksLeft">
+                    Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar
+                </div>
             </div>
-            <TodoList todos={todos} toggleTodo={toggleTodo} />
-            <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
-            <button className="ma2" onClick={handleTodoAdd}><i class="fi fi-rr-add"></i></button>
-            <button className="" onClick={handleClearAll} ><i class="fi fi-rr-trash"></i></button>
-            <div className="tasksLeft">
-                Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar
-            </div>
-          </div>
-          <footer>
-            <p>Copyright 2022 Alberto Rodríguez.</p>
-          </footer>  
+            <footer>
+                <p>Copyright 2022 Alberto Rodríguez.</p>
+            </footer>  
         </Fragment>
     );
 } 
