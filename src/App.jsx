@@ -52,7 +52,8 @@ export function App() {
         <Fragment>
             <div className="container">
                 <div id="heading">
-                    <h1 className="pa2 avenir">Lista de tareas <i class="fi fi-rr-edit"></i></h1>
+                    <h1 className="pa2 avenir">Lista de tareas</h1>
+                    <i class="fi fi-rr-edit"></i>
                 </div>
                 <div className="box-mid">
                     <TodoList todos={todos} toggleTodo={toggleTodo} />
